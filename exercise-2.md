@@ -4,7 +4,7 @@
 
 Now that we can write, store, and modify objects, let's look at methods. Methods are functions that are stored on objects. We can create our own methods on objects, but JavaScript provides us with built-in methods that are commonly used.
 
-1. [ ] Look over the provided `restaurant` object. Identify its keys and verify which data type is stored for each value.
+1. [] Look over the provided `restaurant` object. Identify its keys and verify which data type is stored for each value.
 
    This object does something different from our last restaurant object. It has a `pizzaToppings` key that stores an object with pizza topping keys and price values.
 

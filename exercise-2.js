@@ -26,4 +26,38 @@ const papaJohns = {
 
 // DO NOT EDIT THE ABOVE OBJECT // 
 
-// YOUR WORK GOES HERE // 
+// YOUR WORK GOES HERE //
+const grabKeys = (object) => {
+  return Object.keys(object);
+};
+
+console.log(grabKeys(papaJohns));
+console.log(grabKeys(papaJohns.pizzaToppings));
+
+const confirmValues = (object, target) => {
+  return Object.values(object).length === target;
+};
+
+console.log(confirmValues(papaJohns, 9));
+console.log(confirmValues(papaJohns, 8));
+
+const getToppingsInfo = (object) => {
+  return Object.entries(object.pizzaToppings);
+};
+
+console.log(getToppingsInfo(papaJohns));
+
+papaJohns.printAd = function (topping) {
+  return `Welcome to ${papaJohns.name}. We are located at ${papaJohns.address}. This week we are having a sale on ${topping} for $${papaJohns.pizzaToppings[topping]}. ${papaJohns.slogan}`;
+};
+
+console.log(papaJohns.printAd("bacon"));
+
+papaJohns.slogan = "I mean come on it's delicious.";
+papaJohns.address = "123 Amazing Pizza Plaza";
+
+console.log(papaJohns.printAd("bacon"));
+
+
+
+
